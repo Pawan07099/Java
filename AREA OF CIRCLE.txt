@@ -1,0 +1,51 @@
+1) Using simple initializing method
+
+public class main
+{
+public static void main(String []args)
+{
+int r = 7;
+double area = 3.14*r*r;
+System.out.println("The Area of Circle is equal to \n" +area)
+}
+}
+
+2) using Scanner class
+
+import java.util.Scanner;
+public class main
+{
+public static void main(String []args)
+{
+Scanner sc = new Scanner(System.in);
+int r;
+double area;
+System.out.println("Enter the radiues \n");
+r = sc.nextInt();
+area=3.14*r*r;
+System.out.println("the area of circle is equal to\n" +area);
+}
+}
+
+3)Using constructor
+
+import java.util.Scanner;
+class Area
+{
+double area;
+Area(double r)
+{
+area=3.14*r*r;
+}
+}
+public class main
+{
+public static void main(String []args)
+{
+Scanner sc = new Scanner(System.in);
+System.out.println("Enter the value of radius");
+double rad;
+rad = sc.nextDouble();
+Area a = new Area(rad);
+System.out.println("the area of circle\n" +a.area);
+}
