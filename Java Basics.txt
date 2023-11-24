@@ -1,0 +1,83 @@
+There are two types of Programming language
+:--procedure oriented Programming Language
+:--object oriented Programming Language
+
+(POP)Procedure Oriented Programming Language
+-----it tries to emphasis more on function than data value
+-----In this concept is divided into various function
+-----overloading is not possible and is less secure
+
+(OOP)Object Oriented Programming Language
+-----it tries to emphasis more on data value than function
+-----In this language it divides into various data known OBJECTS
+-----Overloading is possible and also is more Secure
+
+There are various principles followed by OOP
+:-Data Abstraction
+---It is act of representing essential feature without knowing the background detail.
+:-Encapsulation
+---Wrapping of data and function of an object as a unit that can be used together in a specific operation is called encapsulation.
+:-Inheritance
+---Inheriting data from one class to another classs is called as Inheritance.
+:-Polymorphism
+---Single function to carry multiple task is called as polymorphism.
+
+
+Class:-
+---It is a blueprint for creating object.
+Eg--public class Basics {
+
+}
+
+object:-
+---it is a instance of a class.
+Eg-public class  {
+new obj = obj car;(object inside class).
+
+
+There are three types of variable:
+local variable(it is deClared in inside the body of the method)
+static variable(A variable that is declared as staic is called as static variable)
+instance variable(a variable is declared in a class but outside the body of method)
+
+
+Types of Operators:
+1)Arithmetical Operator:- +,_,*,/,%
+2)Logical Operator:- &&,||,!
+3)Relational operator:- <,<=,>,>=,==,!=
+
+ASCII(American Standard Code For Information Interchange)
+A to Z = 65-90
+a to z = 97-122
+blank = 32
+0 to 9 = 48-57
+
+Token:-
+It is individual component of java program and which has some meaning and takes active part while Execution.
+There are different types of token:-(Literals,Operators,Identifiers,Punctuators,Seperators,Keywords,Assignment)
+   
+                              Primitive Data type
+Numeric Data type                                          Non Numeric Type
+1)Integers                                                 1)Character    
+2)Floating                                                 2)Boolean
+
+
+Integers---byte(1 byte)
+           short(2 byte)
+           int(4 byte)
+           long(8 byte) 
+Floating---float(4 byte)
+       	   Double(8 byte)
+
+                              Non primitive Data type
+Class                                Array                        Interface
+
+types Of conversion
+1) implicit conversion(lower byte to higher byte)
+2) Explicit conversion(user's choice)
+
+Unary plus(+)
+unary minus(-)
+increment(++)-[Prefix & postfix] 
+decrement(--)
+
