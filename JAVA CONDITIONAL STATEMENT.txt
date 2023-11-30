@@ -1,0 +1,235 @@
+1)Write a Java program to get a number from the user and print whether it is positive or negative
+
+import java.util.Scanner;
+public class Main
+{
+public static void main(String args[])
+{
+Scanner sc = new Scanner(System.in);
+System.out.println("Enter the input value:");
+int a = sc.nextInt();
+if(a>0)
+{
+System.out.println("The given input value is Positive");
+}
+else if(a==0)
+{
+System.out.print("The given input value is zero");
+}
+else
+{
+System.out.print("The given value is negative");
+}
+}
+} 
+
+2)Write a Java program to solve quadratic equations (use if, else if and else)
+
+import java.util.Scanner;
+public class Main
+{
+public static void main(String args[])
+{
+Scanner sc = new Scanner(System.in);
+System.out.println("enter the value of a");
+int a = sc.nextInt();
+System.out.println("Enter the value of b");
+int b = sc.nextInt();
+System.out.println("Enter the value of c");
+int c = sc.nextInt();
+long result = b*b - 4*a*c ;
+if(result>0)
+{
+double r1= (-b - Math.sqrt(result))/2*a;
+double r2 = (-b + Math.sqrt(result))/2*a;
+System.out.println("the root r1 is equal to" +r1 +"and r2 are" +r2);
+}
+else if(result == 0)
+{
+r1 = -b/2*a;
+System.out.println (" the given root are" +r1);
+}
+else
+{
+System.out.println(" there are no root");
+}
+}
+}
+
+3) Write a Java program that takes three numbers from the user and prints the greatest number.
+
+import java.util.Scanner;
+public class Main
+{
+public static void main(String args[])
+{
+Scanner sc = new Scanner(System.in);
+System.out.println("enter the value of a");
+int a = sc.nextInt();
+System.out.println("Enter the value of b");
+int b = sc.nextInt();
+System.out.println("Enter the value of c");
+int c = sc.nextInt();
+
+if(a>b && a>c)
+{
+System.out.println(" a is greater" );
+}
+else if(b>a && b>c)
+{
+Sytem.out.println("b is greater");
+}
+else 
+{
+System.out.println(" c is greater");
+}
+}
+}
+
+4. Write a Java program that reads a floating-point number and prints "zero" if the number is zero. Otherwise, print "positive" or "negative". Add "small" if the absolute value of the number is less than 1, or "large" if it exceeds 1,000,000.
+
+
+import java.util.Scanner;
+public class Main
+{
+public static void main (String args[])throws Exception
+{
+Scanner sc= new Scanner(System.in);
+System.out.println("Input number");
+double a=sc.nextDouble();
+if(a>0)
+{
+if(a<1)
+{
+System.out.println("small positive number");
+}
+else if(a>100000)
+{
+System.out.println("big positive number");
+}
+else
+{
+System.out.println("positive number");
+}
+}
+else if(a<0)
+{
+if(Math.abs(a)<1)
+{
+System.out.println("small Negative number");
+}
+else if(Math.abs(a)<100000)
+{
+System.out.println("big positive number");
+}
+else
+{
+System.out.println("Negative number");
+}
+}
+else
+{
+System.out.println("the number is zero");
+}
+}
+}
+
+
+5. Write a Java program that takes a number from the user and generates an integer between 1 and 7. It displays the weekday name?
+
+
+import java.util.Scanner;
+public class Main
+{
+    public static void main (String [] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter the integer from 1 to 7");
+        int day = sc.nextInt();
+        
+        switch(day)
+        {
+            case 1:System.out.println("sunday");
+            break;
+            case 2:System.out.println("Monday");break;
+            case 3:System.out.println("Tuesday");break;
+            case 4:System.out.println("Wednesday");break;
+            case 5:System.out.println("Thursday");break;
+            case 6:System.out.println("Friday");break;
+            case 7:System.out.println("Saturday");break;
+            default:System.out.println("not a day");break;
+        }
+
+6. Write a Java program that reads two floating-point numbers and tests whether they are the same up to three decimal places.
+
+import java.util.Scanner;
+public class main
+{
+public static void main(String args[])
+{
+Scanner sc = new Scanner(System.in);
+System.out.println("enter the 1st float value");
+double a = sc.nextDouble();
+System.out.println("Enter the 2nd Value");
+double b = sc.nextDouble();
+
+double x = a*1000;
+x=a/1000;
+
+double y = b*1000;
+y = b/1000;
+
+if(x==y)
+{
+System.out.println("they are same");
+}
+else
+{
+System.out.println("they are different");
+}
+}
+}
+
+7. Write a Java program to find the number of days in a month.
+
+import java.util.Scanner;
+public class Main
+{
+public static void main(String args[])
+{
+Scanner sc = new Scanner(System.in);
+System.out.println("Enter the month to find out the day");
+int num = sc.nextInt();
+
+switch(num)
+{
+case 1:System.out.print("January=31");
+break;
+case 2:System.out.println("February=28/29");
+break;
+case 3:System.out.println("March=31");
+break;
+case 4:System.out.println("April=30");
+break;
+case 5:System.out.println("May=31");
+break;
+case 6:System.out.println("june=30");
+break;
+case 7:System.out.println("july=31");
+break;
+case 8:System.out.println("August=30");
+break;
+case 9:System.out.println("September=31");
+break;
+case 10:System.out.println("October=30");
+break;
+case 11:System.out.println("November=31");
+break;
+case 12:System.out.println("December=30");
+break;
+}
+}
+}
+
+
+
